@@ -5,9 +5,13 @@
     background-position: center;
 }
 
+.fa-lg {
+    font-size: 2rem;
+}
+
 .relative-title-1 {
     top: 35%;
-    left: 10%;
+    left: 0;
     position: relative;
 }
 
@@ -43,6 +47,7 @@
 
 .solid {
     border-style: solid;
+    border-color: red;
 }
 
 .absolute {
@@ -66,7 +71,20 @@
 }
 
 
+.about-me {
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    object-fit: cover;
+}
+
 /* media queries */
+
+@media (max-width:575px) {
+    .centered {
+        text-align: center;
+    }
+}
 
 @media (min-width: 576px) and (max-width: 767px) {
     .bold{
@@ -75,7 +93,7 @@
 
     .relative-title-1 {
         top: 20%;
-        left: 5%;
+        left: 0%;
         position: relative;
     }
     
@@ -151,6 +169,11 @@
     .dedication {
         display: block;
         top: 35%;
+    }
+
+    .about-me {
+        width:300px;
+        height:300px;
     }
 }
 
